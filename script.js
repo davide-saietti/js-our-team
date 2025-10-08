@@ -61,3 +61,44 @@ teamMembers.forEach((member=>{
  container.appendChild(column)
 
 }))
+
+
+/* esercizio risolvibile con ciclo for.
+è possibile risolvere anche con un semplice ciclo for. al posto del foreach
+
+for(i = 0; i<=teamMembers.length; i++){
+
+const member = teamMembers[i]
+
+
+const column = document.createElement('div')
+  column.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-')
+
+
+  column.innerHTML = 
+`  
+  <div class="card h-40 text-center white-sm mb-5" >
+      <img src="${member.img}" class="card-img-top" alt="${member.name}"/>
+      <div class="card-body">
+        <h5 class="card-title">${member.name}</h5>
+        <p class="card-text text-muted">${member.role}</p>
+        <p class="card-text text-muted">${member.email}</p>
+      </div>
+    </div>`
+
+
+ container.appendChild(column)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+*/
